@@ -26,3 +26,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 # ocr-appareils
+
+
+# Erreur rencontrées:
+
+## Install autre PC
+
+ERROR in ./src/styles.scss (./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src??embedded!./node_modules/sass-loader/lib/loader.js??ref--14-3!./src/styles.scss)
+Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+Error: ENOENT: no such file or directory, scandir 'E:\Angular\ocr-appareils\node_modules\node-sass\vendor'
+    at Object.readdirSync (fs.js:783:3)
+    
+  Sol:   npm rebuild node-sass

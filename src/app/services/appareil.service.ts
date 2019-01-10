@@ -5,6 +5,8 @@ export class AppareilService {
     { name: 'Lave vaisselle',
     status: 'Allumé' },
     { name: 'Micro onde',
+    status: 'Eteint' },
+    { name: 'Four',
     status: 'Eteint' }
   ];
 
