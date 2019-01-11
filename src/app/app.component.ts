@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/Rx';
+import 'rxjs/add/observable/interval';
 
 @Component({
   selector: 'app-root',
@@ -20,11 +20,11 @@ export class AppComponent implements OnInit {
          this.secondes = value;
        },
        (error: any) => {
-         console.log('Une erreur a été rencontrée');
+         console.log('Une erreur a été rencontrée' + error);
        },
        () => {
-         console.log('Observable complétée !')
+         console.log('Observable complétée !');
        }
      )
-   }
+   };
  }
