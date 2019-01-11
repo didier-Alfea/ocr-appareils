@@ -18,6 +18,7 @@ export class AuthComponent implements OnInit {
   }
 
   onSignIn() {
+    // signIn methode async
     this.authService.signIn().then(
       () => {
         this.authStatus = this.authService.isAuth;
@@ -32,4 +33,3 @@ export class AuthComponent implements OnInit {
   }
 
 }
-
