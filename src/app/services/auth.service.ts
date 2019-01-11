@@ -3,6 +3,7 @@ export class AuthService {
   isAuth = false;
 
   signIn() {
+    //on simule un temps de réponse pour l'auth
     return new Promise(
       (resolve, reject) => {
         setTimeout(
